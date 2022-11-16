@@ -56,7 +56,7 @@ ul {
   padding-right: 15px;
 }
 
-.site-nav {
+.nav-list {
   display: flex;
   justify-content: space-around;
   padding: 0;
@@ -87,11 +87,11 @@ ul {
   color: var(--accent-text-color);
 }
 
-.site-nav .item {
+.nav-list .nav-page {
   margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.nav-list .nav-page:last-child {
   margin-right: 0;
 }
 
@@ -155,13 +155,13 @@ ul {
   max-height: 600px;
 }
 
-.top-section {
+.header {
   margin-top: 0;
   padding-top: 0;
   border-bottom: 1px solid #ececec;
 }
 
-.top-section .container {
+.header .container {
   background-color: var(--top-background-color);
   display: flex;
   align-items: center;
@@ -193,7 +193,7 @@ ul {
 /* Логотип */
 .logo {
   font-weight: 700;
-  color: var(--logo-text-color);
+  color: var(--accent-text-color);
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.17;
@@ -201,6 +201,9 @@ ul {
   margin-right: 90px;
 }
 
+.logo-item {
+  color: var(--logo-text-color);
+}
 /* Цвет и стиль кнопок навигации и адреса */
 .link {
   color: var(--title-text-color);
@@ -223,8 +226,8 @@ ul {
 }
 /* Эффекты кнопок навигации */
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.nav-list .link:hover,
+.nav-list .link:focus,
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-text-color);
